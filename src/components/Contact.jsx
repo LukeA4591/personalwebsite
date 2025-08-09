@@ -25,26 +25,7 @@ function Contact() {
                             <a href={profile.links.github} className="inline-flex items-center gap-2 underline"><Github className="h-4 w-4" /> GitHub</a>
                         </div>
                         <div className="mt-6">
-                            <a
-                                href={RESUME_URL}
-                                target="_blank"
-                                rel="noreferrer"
-                                className="inline-flex items-center gap-2 rounded-full bg-black px-4 py-2 text-white hover:opacity-90 dark:bg-white dark:text-black"
-                            >
-                                <FileText className="h-4 w-4" /> View Resume
-                            </a>
                         </div>
-                    </div>
-                    <div>
-                        <form action={mailto} method="post" className="space-y-3" onSubmit={(e) => e.preventDefault()}>
-                            <input className="w-full rounded-xl border px-3 py-2" placeholder="Your name" />
-                            <input className="w-full rounded-xl border px-3 py-2" placeholder="Your email" type="email" />
-                            <textarea className="w-full rounded-xl border px-3 py-2" placeholder="Message" rows={5} />
-                            <button className="inline-flex items-center gap-2 rounded-xl bg-black px-4 py-2 text-white hover:opacity-90 dark:bg-white dark:text-black">
-                                Send <ArrowRight className="h-4 w-4" />
-                            </button>
-                            <p className="text-xs text-zinc-500">This button is a placeholder; wire it to your backend or a service like Formspree.</p>
-                        </form>
                     </div>
                 </div>
             </Card>

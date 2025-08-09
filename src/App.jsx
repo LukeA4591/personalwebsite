@@ -16,7 +16,7 @@ import profile from "./data/profile.js";
 
 export default function LukeArmstrongSite() {
     return (
-        <div className="min-h-screen bg-white text-zinc-900 antialiased dark:bg-zinc-900 dark:text-zinc-100">
+        <div className="min-h-screen overflow-x-hidden bg-white text-zinc-900 antialiased dark:bg-zinc-900 dark:text-zinc-100">
             <Nav />
             <Hero />
             <main>
