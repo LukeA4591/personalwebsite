@@ -1,12 +1,48 @@
-# React + Vite
+# Personal Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the source code for my personal portfolio website, built with [React](https://reactjs.org/) and [Vite](https://vitejs.dev/).  
+The website showcases my professional experience, projects, skills, and achievements.  
 
-Currently, two official plugins are available:
+The live site is available at: **[lukearmstrong.co.nz](https://lukearmstrong.co.nz)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Features
+- Fast build times and optimized performance using Vite
+- Secure HTTPS with an AWS-issued SSL certificate
+- Automated deployments through AWS Amplify
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Technology Stack
+- **Framework:** React
+- **Styling:** Tailwind CSS
+- **Hosting:** AWS Amplify
+- **Version Control:** Git and GitHub
+
+---
+
+## Local Development
+
+### Prerequisites
+- [Node.js](https://nodejs.org/) (latest LTS version recommended)
+- npm (comes with Node.js) or yarn/pnpm
+
+### Installation
+Clone the repository:
+```bash
+git clone https://github.com/LukeA4591/personalwebsite.git
+cd personalwebsite
+```
+Install dependencies:
+```npm install```
+
+### Running Locally
+Start the development server:
+```npm run dev```
+
+Build for production:
+```npm run build```
+
+Preview the production build:
+```npm run preview```
