@@ -7,6 +7,7 @@
     "dev": "vite",
     "prebuild": "npm ci --include=dev",
     "build": "npx tsc -b && npx vite build",
+    "typecheck": "tsc -b --pretty false",
     "lint": "eslint .",
     "preview": "vite preview"
   },
