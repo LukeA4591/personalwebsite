@@ -1,6 +1,5 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-import { GraduationCap, Code2, Users, Trophy } from 'lucide-react';
+import { Code2, Users, Trophy } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 export default function AboutSection() {

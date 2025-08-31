@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink, Github, Calendar, Database, Cloud, Server } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';

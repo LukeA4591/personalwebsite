@@ -1,6 +1,5 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-import { Code2, Database, Cloud, TestTube, Wrench, Smartphone } from 'lucide-react';
+import { Code2, Database, TestTube, Wrench } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 
