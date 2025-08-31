@@ -1,7 +1,7 @@
 # Personal Website
 
 This repository contains the source code for my personal portfolio website, built with [React](https://reactjs.org/) and [Vite](https://vitejs.dev/).  
-The website showcases my professional experience, projects, skills, and achievements.  
+The website showcases my professional experience, projects, skills, and achievements.
 
 The live site is available at: **[lukearmstrong.co.nz](https://lukearmstrong.co.nz)**
 
