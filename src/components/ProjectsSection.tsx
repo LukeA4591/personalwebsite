@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import { ExternalLink, Github, Calendar, Database, Cloud, Server } from 'lucide-react';
+import { ExternalLink, Github, Calendar } from 'lucide-react';
+// , Database, Cloud, Server
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -7,25 +8,26 @@ import { Button } from '@/components/ui/button';
 export default function ProjectsSection() {
     const projects = [
         {
+            title: "Homehelper",
+            period: "Feb 2025 – current",
+            description: "HomeHelper is a renovation management web application developed in a 7-person team using Spring Boot and Thymeleaf. It streamlines project coordination with features like live chat messaging, " +
+                "real-time notifications, and an AI-powered assistant to support users throughout their renovation process.",
+            technologies: ["Java", "Spring Boot", "Thymeleaf"],
+            featured: true,
+            liveUrl: "https://csse-seng302-team900.canterbury.ac.nz/prod/home",
+        },
+        {
             title: "GameTrove",
             period: "Feb 2025 – June 2025",
             description: "A comprehensive web application for browsing, reviewing, and rating video games. Features include wishlist management, ownership tracking, and user accounts with a responsive UI connected to RESTful API endpoints.",
             technologies: ["React", "Node.js", "Express", "MySQL", "AWS"],
-            liveUrl: "https://gametrove.lukearmstrong.co.nz",
-            architecture: [
-                { icon: Database, label: "MySQL (RDS)" },
-                { icon: Server, label: "Node.js API (EC2)" },
-                { icon: Cloud, label: "Frontend (S3)" }
-            ],
-            featured: true,
+            // architecture: [
+            //     { icon: Database, label: "MySQL (RDS)" },
+            //     { icon: Server, label: "Node.js API (EC2)" },
+            //     { icon: Cloud, label: "Frontend (S3)" }
+            // ],
+            featured: false,
             sourceUrl: "https://github.com/LukeA4591/GameTrove"
-        },
-        {
-            title: "Homehelper",
-            period: "Feb 2025 – current",
-            description: "A renovation management web application built with Spring Boot and Thymeleaf in a collaborative 7-person team environment. Implemented CI/CD pipelines and comprehensive testing.",
-            technologies: ["Java", "Spring Boot", "Thymeleaf", "CI/CD"],
-            liveUrl: "https://csse-seng302-team900.canterbury.ac.nz/prod/home",
         },
         {
             title: "Personal Portfolio Website",
@@ -110,19 +112,19 @@ export default function ProjectsSection() {
                                                 </div>
                                             </div>
 
-                                            {project.architecture && (
-                                                <div className="mb-6">
-                                                    <h4 className="font-semibold text-slate-900 mb-3">AWS Architecture</h4>
-                                                    <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-                                                        {project.architecture.map((item, idx) => (
-                                                            <div key={idx} className="flex items-center gap-2 p-3 bg-white rounded-lg border">
-                                                                <item.icon className="w-5 h-5 text-blue-600" />
-                                                                <span className="text-sm font-medium text-slate-700">{item.label}</span>
-                                                            </div>
-                                                        ))}
-                                                    </div>
-                                                </div>
-                                            )}
+                                            {/*{project.architecture && (*/}
+                                            {/*    <div className="mb-6">*/}
+                                            {/*        <h4 className="font-semibold text-slate-900 mb-3">AWS Architecture</h4>*/}
+                                            {/*        <div className="grid grid-cols-1 md:grid-cols-3 gap-3">*/}
+                                            {/*            {project.architecture.map((item, idx) => (*/}
+                                            {/*                <div key={idx} className="flex items-center gap-2 p-3 bg-white rounded-lg border">*/}
+                                            {/*                    <item.icon className="w-5 h-5 text-blue-600" />*/}
+                                            {/*                    <span className="text-sm font-medium text-slate-700">{item.label}</span>*/}
+                                            {/*                </div>*/}
+                                            {/*            ))}*/}
+                                            {/*        </div>*/}
+                                            {/*    </div>*/}
+                                            {/*)}*/}
 
                                             {project.features && (
                                                 <div className="mb-6">
