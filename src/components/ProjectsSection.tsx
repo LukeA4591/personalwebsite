@@ -8,9 +8,9 @@ import { Button } from '@/components/ui/button';
 export default function ProjectsSection() {
     const projects = [
         {
-            title: "Homehelper",
+            title: "Collabrick",
             period: "Feb 2025 – current",
-            description: "HomeHelper is a renovation management web application developed in a 7-person team using Spring Boot and Thymeleaf. It streamlines project coordination with features like live chat messaging, " +
+            description: "Collabrick is a renovation management web application developed in a 7-person team using Spring Boot and Thymeleaf. It streamlines project coordination with features like live chat messaging, " +
                 "real-time notifications, and an AI-powered assistant to support users throughout their renovation process.",
             technologies: ["Java", "Spring Boot", "Thymeleaf"],
             featured: true,
