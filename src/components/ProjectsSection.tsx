@@ -14,7 +14,7 @@ export default function ProjectsSection() {
                 "real-time notifications, and an AI-powered assistant to support users throughout their renovation process.",
             technologies: ["Java", "Spring Boot", "Thymeleaf"],
             featured: true,
-            liveUrl: "https://csse-seng302-team900.canterbury.ac.nz/prod/home",
+            liveUrl: "https://csse-seng302-team900.canterbury.ac.nz/prod/",
         },
         {
             title: "GameTrove",
