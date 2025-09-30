@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 import HeroSection from './components/HeroSection';
 import AboutSection from './components/AboutSection';
@@ -9,19 +9,16 @@ import ContactSection from './components/ContactSection';
 
 export default function App() {
     const [activeSection, setActiveSection] = useState('hero');
-    const { scrollY } = useScroll();
-    const backgroundY = useTransform(scrollY, [0, 500], [0, 150]);
 
     const sections = [
         { id: 'hero', label: 'Home' },
         { id: 'about', label: 'About' },
         { id: 'projects', label: 'Projects' },
         { id: 'skills', label: 'Skills' },
-        { id: 'experience', label: 'Experience' },
         { id: 'contact', label: 'Contact' }
     ];
 
-    const scrollToSection = (sectionId) => {
+    const scrollToSection = (sectionId: string) => {
         const element = document.getElementById(sectionId);
         if (element) {
             element.scrollIntoView({ behavior: 'smooth' });
